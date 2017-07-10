@@ -4,10 +4,10 @@ let make _ ::ff ::dd => {
   ...component,
   render: fun _ => {
     <div className="footer">
-      <div className="title">
+      <div style=(Style.titleCss)>
         (ReasonReact.stringToElement "Footer ... uuu")
       </div>
-      <div className="title">
+      <div style=(Style.titleCss)>
         (ReasonReact.stringToElement ff)
         <br/>
         (ReasonReact.stringToElement dd)
